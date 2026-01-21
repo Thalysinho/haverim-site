@@ -1,0 +1,461 @@
+* {
+font-family: 'Montserrat', sans-serif;
+}
+h2{
+    color: #82817f;
+}
+.col-5{
+    color: #b5b5b5;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    color: #838383;
+}
+header {
+    height: 90px;
+    background-color: #ededed;
+}
+ul li {
+    margin: 15px;
+}
+.wppButton {
+    background-color: #80d0cd;
+    color: white;
+    padding-top: 3px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.dentroDiv{
+    position: relative;
+    margin-top: -150px;
+    
+}
+.telCora{
+    color: inherit;   
+}
+.telCor:hover{
+    color: rgb(0, 0, 0);   
+    background-color: white;
+}
+.txtBannerf1{
+    color: white;
+    text-align: center;
+    margin-bottom: -530px;
+    margin-top: 310px;
+    position: relative; 
+}
+.h1Bannerf1{
+    font-size: 47px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
+
+.pBannerf1{
+    font-size: 22px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+.btnSaibaMais{
+      margin-top: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 30px;
+    border-radius: 35px;
+    border: 1px solid white;
+
+    color: white;              /* cor base */
+    text-decoration: none;
+    transition: all 0.3s ease; /* animação suave */
+}
+.btnSaibaMais:hover{
+    background-color: white;
+    color: black; /* muda TUDO de uma vez */
+}
+.qualificacao{
+    font-weight: 400;
+    color: white;
+}
+.txtProd{
+    padding-left: 25px;
+}
+.agulhaProd{
+    background-color: #ff881c; 
+    padding-top: 50px;
+}
+.capaceteProd{
+    background-color: #ffac60;
+    padding-top: 50px;
+}
+.maoProd{
+    background-color: #ff9f48;
+    padding-top: 50px;
+}
+.peProd{
+    background-color: #ff912e;
+    padding-top: 50px;
+}
+.harimMoment{
+padding-top: 235px;
+color: #82817f;
+}
+.imgrisco{
+  padding-left: 520px;
+}
+.imgriscoo{
+    padding-left: 220px;
+  }
+.txtHarimH2{
+    text-align: center;
+    color: #82817f;
+}
+.imgTextdistance{
+    padding-top: 70px;
+}
+.HaverimColorCSS{
+    color: #82817f;
+}
+.distanceHaverim{
+    padding-top: 230px;
+    padding-bottom: 280px;
+    padding-left: 500px;
+    margin-left: -300px;
+    margin-top: -100px;
+}
+.pNomeProdutoThicken{
+    color:  #82817f;
+    padding-left: 0px;
+}
+.pNomeProdutoThicken1{
+    color:  #82817f;
+    padding-left: 5px;
+}
+.imgLatatck1{
+    padding-left: 20px;
+}
+.imgLatatck{
+    padding-left: 40px;
+}
+.imgLatatck2{
+    padding-left: 20px;
+}
+.estrelinhasPapum{
+    padding-left: 70px;
+}
+.estrelinhasPapum2{
+    padding-left: 50px;
+}
+.estrelinhasPapum3{
+    padding-left: 60px;
+}
+.pProdutos11{
+    font-size: 12px;
+    color: #c7c7c7;
+    padding-left: 65px;
+}
+.pProdutos1{
+    font-size: 12px;
+    color: #c7c7c7;
+    padding-left: 70px;
+}
+.pProdutos{
+    font-size: 12px;
+    color: #c7c7c7;
+    padding-left: 35px;
+}
+.pNomeProduto{
+   color:  #82817f;
+   padding-left: 25px;
+}
+.distance{
+    margin-top: -40px;
+
+}
+.distance2{
+    margin-top: -10px;
+}
+.distance1{
+    margin-top: -20px;
+}
+.pNomeProduto2{
+    color:  #82817f;
+    padding-left: 45px;
+ }
+.bProdutos{
+    font-size: 25px;
+    color: #f58f36;
+    padding-left: 10px;
+}
+.backgorundDistanceLatas{
+    padding-top: 90px;
+}
+.imgProduto{
+    text-align: center;
+    color: #82817f;
+    padding-top: 75px;
+}
+.confiraEdit{
+    text-align: center;
+    color: #82817f;
+    
+}
+.visita{
+    background-color: #fff7eb;
+}
+.formVisita{
+    color: #82817f 
+}
+.h2Visita{
+    padding: 50px;
+    padding-left: 130px; 
+}
+.pVisita{
+margin-left: -90px;
+margin-top: -50px;
+    text-align: center;
+    color: #b5b5b5;
+}
+/* Container do formulário */
+.formularioVisita{
+  width: 100%;
+  max-width: 650px;       
+  margin: 0 auto;         
+  padding: 65px 55px;     
+  box-sizing: border-box;
+}
+
+/* Inputs e textarea: padrão */
+.inpName,
+.inpAssunto,
+.inpEmail,
+.inpTelefone,
+.formControl{
+  width: 100%;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 13px;
+  box-sizing: border-box;
+  outline: none;
+  color: #b5b5b5;
+}
+
+/* Linha Email + Telefone */
+.linhaInputs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* textarea */
+.formControl{
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* Botões */
+.btnsVisita{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.btnResetVisita,
+.btnSubmitVisita{
+  border: 1px solid #dac29f;
+  background-color: #fff7eb;
+  color: #dac29f;
+  padding: 10px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  border-radius: 30px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btnResetVisita:hover,
+.btnSubmitVisita:hover{
+  background-color: #dac29f;
+  color: #ffffff;
+}
+
+
+/* Imagens dos botões */
+.btnResetVisita img,
+.btnSubmitVisita img{
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsivo: no celular vira uma coluna */
+@media (max-width: 600px){
+  .formularioVisita{
+    padding: 40px 20px;
+  }
+
+  .linhaInputs{
+    grid-template-columns: 1fr;
+  }
+
+  .btnsVisita{
+    flex-direction: column;
+  }
+
+  .btnResetVisita,
+  .btnSubmitVisita{
+    width: 100%;
+  }
+}
+
+.DicasSaude{
+    padding: 130px;
+    margin-left: -145px;
+}
+.imgSaude{
+    padding: 70px;
+}
+.textSaude{
+    text-align: center;
+    color: #b5b5b5;
+}
+.centralizaaaa{
+    display: flex;
+}
+.sectionMAP{
+    background-image: url(../BACKGROUNDmap.png);
+    padding: 120px 0 70px;
+    text-align: center;
+    color: white;
+    margin-bottom: 70px;
+}
+.btnMapa{
+    display:inline-block;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: white;
+    align-items: center;
+}
+.colorTXT{
+    color: #ff7329;
+}
+.contatosHTM{
+    padding-top:80px;
+    padding-bottom: 50px;
+    color: #82817f;
+}
+.emailTest{
+    text-align: left;
+    margin-left: 45px;
+}
+.corsim{
+    color: #838383;
+    font-size: 15px;
+}
+.corsim:hover{
+    color: #ff7329;
+}
+
+.logoImg{
+    padding-top: 20px;
+
+}
+.backgorundFOOTER{
+    background-color: #ededed;
+}
+.distanceEND{
+    padding-top: 20px;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+  }
+  .slider input{
+    display:  none;
+  }
+  .slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+  }
+  .slide img{
+    width: 800px;
+  }
+  .manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  .manual-btn{
+    border: 2px solid #5e5e5e;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .manual-btn:not(:last-child){
+    margin-right: 20px;
+  }
+  .manual-btn:hover{
+    background-color: rgb(4, 4, 4);
+  }
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first{
+    margin-left: -25%;
+  }
+  #radio3:checked ~ .first{
+    margin-left: -50%;
+  }
+  #radio4:checked ~ .first{
+    margin-left: -75%;
+  }
+  .navigation-auto div{
+    border:  2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+  }
+  .navigation-auto div:not(:last-child){
+    margin-right: 20px;
+  }
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+  }
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+  }
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+  }
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+  }
+  
