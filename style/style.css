@@ -34,19 +34,66 @@ ul li {
     margin-top: -150px;
     
 }
+.telCor{
+    color: inherit;
+}
+.telCor:hover{
+     color: inherit;         
+  text-decoration: none;  
+  outline: none;          
+  box-shadow: none;
+ 
+}
 .telCora{
     color: inherit;   
 }
-.telCor:hover{
+.telCora:hover{
     color: rgb(0, 0, 0);   
     background-color: white;
+    text-decoration: none;  
+    outline: none;          
+    box-shadow: none
+     
 }
+/* Banner (div pai do texto + imagem) */
 .txtBannerf1{
-    color: white;
-    text-align: center;
-    margin-bottom: -530px;
-    margin-top: 310px;
-    position: relative; 
+  position: absolute;
+  inset: 0;               
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+}
+
+
+.bannerHero{
+  position: relative;
+  z-index: 0;
+}
+
+/* imagem do banner  */
+.bannerHero > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  display: block;
+}
+
+
+.bannerHero::after{
+   content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  z-index: 1;
+}
+
+.txtBannerf1{
+ position: absolute;
+  z-index: 2; 
 }
 .h1Bannerf1{
     font-size: 47px;
@@ -67,13 +114,13 @@ ul li {
     border-radius: 35px;
     border: 1px solid white;
 
-    color: white;              /* cor base */
+    color: white;              
     text-decoration: none;
-    transition: all 0.3s ease; /* animação suave */
+    transition: all 0.3s ease; 
 }
 .btnSaibaMais:hover{
     background-color: white;
-    color: black; /* muda TUDO de uma vez */
+    color: black; 
 }
 .qualificacao{
     font-weight: 400;
@@ -342,7 +389,14 @@ margin-top: -50px;
     padding: 15px 30px;
     border-radius: 30px;
     background-color: white;
-    align-items: center;
+    align-items: center;    
+}
+.saibaMaps{
+    color: #838383;
+    font-size: 15px;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
 }
 .colorTXT{
     color: #ff7329;
@@ -359,6 +413,7 @@ margin-top: -50px;
 .corsim{
     color: #838383;
     font-size: 15px;
+    
 }
 .corsim:hover{
     color: #ff7329;
