@@ -1,107 +1,101 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="./style/style.css">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-          crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-          crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-          crossorigin="anonymous"></script>
-
+  <!-- Bootstrap 4 (CSS) -->
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&family=Lobster&family=Montserrat:wght@100;200;300;400;500;800;900&family=Roboto&display=swap"
         rel="stylesheet">
 
-  <title>Document</title>
+  <title>Haverim</title>
 </head>
 
 <body>
 
-  <!-- Header Site -->
-  <header>
-    <nav>
-      <div class="w-100 p-4 container">
-        <div class="row">
+  <!-- HEADER (Navbar Bootstrap + Hamburger) -->
+  <header class="siteHeader">
+    <nav class="navbar navbar-expand-lg navbar-light headerNav">
+      <div class="container">
 
-          <!-- logo da empresa -->
-          <div class="col-sm-2">
-            <img src="./img projeto/logo.png" alt="Logo empresa contratante">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./img projeto/logo.png" alt="Logo empresa contratante" class="logoHeader">
+        </a>
+
+        <!-- Hamburger -->
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto menuHeader">
+            <li class="nav-item"><a class="nav-link corsim" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link corsim" href="#">O Grupo</a></li>
+            <li class="nav-item"><a class="nav-link corsim" href="#">Atuação</a></li>
+            <li class="nav-item"><a class="nav-link corsim" href="#">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link corsim" href="#">Contatos</a></li>
+          </ul>
+
+          <!-- Botão contato -->
+          <div class="wppButton d-flex align-items-center justify-content-center mt-3 mt-lg-0">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="16" height="15" fill="currentColor"
+                 class="mr-2" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              <path fill-rule="evenodd"
+                d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z"/>
+            </svg>
+
+            <a href="#" class="telCor">13 3321.7933</a>
           </div>
-
-          <!-- Home pages -->
-          <div class="col-6 d-flex justify-content-center align-items-center">
-            <ul>
-              <a href="" class="corsim"><li>Home</li></a>
-              <a href="" class="corsim"><li>O Grupo</li></a>
-              <a href="" class="corsim"><li>Atuação</li></a>
-              <a href="" class="corsim"><li>Produtos</li></a>
-              <a href="" class="corsim"><li>Contatos</li></a>
-            </ul>
-          </div>
-
-          <!-- Botão de contato -->
-          <div class="col-sm-2 wppButton">
-            <i class="bi bi-telephone-plus-fill">
-              <svg xmlns="http://www.w3.org/2000/svg"
-                   width="16"
-                   height="15"
-                   fill="currentColor"
-                   class="bi bi-telephone-plus-fill mr-2 mt-2"
-                   viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z"/>
-              </svg>
-            </i>
-
-            <a href="" class="telCor">| 13 3321.7933</a>
-          </div>
-
         </div>
+
       </div>
     </nav>
   </header>
 
-  <!-- banner principal -->
-<div class="bannerHero">
-  <div class="txtBannerf1">
-    <h1 class="h1Bannerf1">Distribuindo qualidade de vida</h1>
-    <p class="pBannerf1">Atendemos toda a Baixada Santista</p>
 
-    <div class="btnSaibaMais">
-      <a href="" class="telCora">
-        SAIBA MAIS
-        <img src="/img projeto/seta ENVIAR (solicite uma visita).png" alt="">
-      </a>
+  <!-- BANNER -->
+  <section class="bannerHero">
+    <div class="txtBannerf1">
+      <h1 class="h1Bannerf1">Distribuindo qualidade de vida</h1>
+      <p class="pBannerf1">Atendemos toda a Baixada Santista</p>
+
+      <div class="btnSaibaMais">
+        <a href="#" class="telCora">
+          SAIBA MAIS
+          <img src="./img projeto/seta ENVIAR (solicite uma visita).png" alt="">
+        </a>
+      </div>
     </div>
-  </div>
 
-  <img src="./img projeto/familyyyyyyyy.png" alt="familia backgorund first">
-</div>
+    <img src="./img projeto/familyyyyyyyy.png" alt="familia backgorund first">
+  </section>
 
 
-  <!-- skills empresa -->
-  <div class="dentroDiv">
+  <!-- SKILLS EMPRESA -->
+  <section class="dentroDiv">
     <div class="container">
-      <div class="row qualificacao">
+      <div class="row qualificacao no-gutters">
 
-        <!-- agilidade -->
-        <div class="col-lg-3 agulhaProd">
+        <div class="col-lg-3 col-md-6 agulhaProd">
           <div class="txtProd">
-            <img src="./img projeto/linha de produtos/agulha (agilidade).png">
+            <img src="./img projeto/linha de produtos/agulha (agilidade).png" alt="">
             <br>
             <img src="./img projeto/risco branco.png" alt="">
             <h3>Agilidade</h3>
@@ -109,10 +103,9 @@
           </div>
         </div>
 
-        <!-- Produtos Nestlé -->
-        <div class="col-lg-3 peProd">
+        <div class="col-lg-3 col-md-6 peProd">
           <div class="txtProd">
-            <img src="./img projeto/linha de produtos/sapato (nestlé).png">
+            <img src="./img projeto/linha de produtos/sapato (nestlé).png" alt="">
             <br>
             <img src="./img projeto/risco branco.png" alt="">
             <h3>Produtos Nestlé</h3>
@@ -120,10 +113,9 @@
           </div>
         </div>
 
-        <!-- Nutrição -->
-        <div class="col-lg-3 maoProd">
+        <div class="col-lg-3 col-md-6 maoProd">
           <div class="txtProd">
-            <img src="./img projeto/linha de produtos/mãos (nutrição).png">
+            <img src="./img projeto/linha de produtos/mãos (nutrição).png" alt="">
             <br>
             <img src="./img projeto/risco branco.png" alt="">
             <h3>Nutrição</h3>
@@ -131,10 +123,9 @@
           </div>
         </div>
 
-        <!-- Especialização -->
-        <div class="col-lg-3 capaceteProd">
+        <div class="col-lg-3 col-md-6 capaceteProd">
           <div class="txtProd">
-            <img src="./img projeto/linha de produtos/capacete (especialização).png">
+            <img src="./img projeto/linha de produtos/capacete (especialização).png" alt="">
             <br>
             <img src="./img projeto/risco branco.png" alt="">
             <h3>Especialização</h3>
@@ -144,21 +135,22 @@
 
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Haverim -->
-  <div class="container harimMoment">
-    <div>
+
+  <!-- HAVERIM -->
+  <section class="container harimMoment">
+    <div class="text-center">
       <h2 class="txtHarimH2">Haverim</h2>
       <img src="./img projeto/risco laranja haverim.png" class="imgrisco" alt="">
     </div>
 
-    <div class="row imgTextdistance">
-      <div class="col-7">
-        <img src="./img projeto/funcionarios harim.png" alt="">
+    <div class="row imgTextdistance align-items-center">
+      <div class="col-lg-7">
+        <img src="./img projeto/funcionarios harim.png" alt="" class="img-fluid">
       </div>
 
-      <div class="col-5">
+      <div class="col-lg-5">
         <p>
           A Haverim atua com Produtos Hospitalares, comércio de instrumentos e materiais para uso médico, cirúrgico,
           hospitalar e de laboratórios. Dentre os pontos principais da empresa, ela se destaca por ter como prioridade
@@ -172,180 +164,171 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- nossos destaques -->
-  <div>
-    <div class="imgProduto">
-      <p class="confiraEdit">Confira</p>
-      <h2>Nossos Destaques</h2>
-      <img src="./img projeto/risco laranja haverim.png" alt="">
 
-      <!-- Carousel -->
-      <div class="slider">
-        <div class="slides">
+  <!-- NOSSOS DESTAQUES -->
+  <section class="imgProduto">
+    <p class="confiraEdit">Confira</p>
+    <h2>Nossos Destaques</h2>
+    <img src="./img projeto/risco laranja haverim.png" alt="">
 
-          <!-- radio btn -->
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
+    <!-- Slider -->
+    <div class="slider">
+      <div class="slides">
 
-          <!-- Fim slide img -->
-          <div class="slide first">
-            <img src="./img projeto/background LATASSSS.png" alt="img1">
-          </div>
+        <input type="radio" name="radio-btn" id="radio1" checked>
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
 
-          <div class="slide">
-            <img src="./CURRICULO portugues-1.png" alt="img2">
-          </div>
-
-          <div class="slide">
-            <img src="./img projeto/funcionarios harim.png" alt="img3">
-          </div>
-
-          <div class="slide">
-            <img src="./img projeto/BACKGORUD SAUDE COGNITIVA.png" alt="img4">
-          </div>
-
-          <!-- Navigation auto -->
-          <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-          </div>
-          <!-- Fim Navigation auto -->
-
+        <div class="slide first">
+          <img src="./img projeto/background LATASSSS.png" alt="img1">
         </div>
 
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </div>
-      </div>
-    </div>
-
-    <!-- produtos -->
-    <div class="distanceHaverim">
-      <div class="row">
-
-        <div class="col-sm-3 distance1">
-          <a href="">
-            <img src="./img projeto/produtos/caixa1 produto.png" class="imgLatatck1">
-            <p class="pNomeProduto">Trophic 1.5 - Hipercalórica</p>
-            <p class="pNomeProduto2">1.5 kcal por ml</p>
-
-            <div class="estrelinhasPapum">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela vazia.png">
-            </div>
-
-            <br>
-
-            <s class="pProdutos1">de R$24,00</s>
-            <p class="pProdutos">
-              por <br>
-              R$<b class="bProdutos">21,23</b>
-            </p>
-          </a>
+        <div class="slide">
+          <img src="./CURRICULO portugues-1.png" alt="img2">
         </div>
 
-        <div class="col-sm-3 distance2">
-          <a href="">
-            <img src="./img projeto/produtos/lata produto.png" class="imgLatatck">
-            <p class="pNomeProdutoThicken">Thicken UP Clear - 125 g -</p>
-            <p class="pNomeProdutoThicken1">Espessante, Gelificante</p>
-
-            <div class="estrelinhasPapum2">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-            </div>
-
-            <br>
-
-            <s class="pProdutos11">de R$67,40</s>
-            <p class="pProdutos">
-              por <br>
-              R$<b class="bProdutos">59,00</b>
-            </p>
-          </a>
+        <div class="slide">
+          <img src="./img projeto/funcionarios harim.png" alt="img3">
         </div>
 
-        <div class="col-sm-3">
-          <a href="">
-            <img src="./img projeto/produtos/lata jr produto.png" class="imgLatatck2">
-            <p class="pNomeProduto">Botina de Segurança</p>
-            <p class="pNomeProduto2">Confeccionada em</p>
-
-            <div class="estrelinhasPapum3">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela vazia.png">
-            </div>
-
-            <br>
-
-            <s class="pProdutos1">de R$24,00</s>
-            <p class="pProdutos">
-              por <br>
-              R$<b class="bProdutos">21,23</b>
-            </p>
-          </a>
+        <div class="slide">
+          <img src="./img projeto/BACKGORUD SAUDE COGNITIVA.png" alt="img4">
         </div>
 
-        <div class="col-sm-3 distance">
-          <a href="">
-            <img src="./img projeto/produtos/caixa produto.png" alt="">
-            <p class="pNomeProduto">Trophic Soya 1000 ml</p>
-            <p class="pNomeProduto2">1.2 kcal por ml</p>
-
-            <div class="estrelinhasPapum3">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela cheia.png">
-              <img src="./img projeto/estrela vazia.png">
-            </div>
-
-            <br>
-
-            <s class="pProdutos1">de R$17,00</s>
-            <p class="pProdutos">
-              por <br>
-              R$<b class="bProdutos">14,82</b>
-            </p>
-          </a>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
         </div>
 
       </div>
-    </div>
-  </div>
 
-  <!-- Solicite visita -->
-  <div class="visita">
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRODUTOS -->
+  <section class="container produtosSection">
     <div class="row">
 
-      <div class="col-lg-6">
-        <img src="./img projeto/café SOLICITE UMA VISITA.png" alt="imagem de um café(solicite uma visita)">
+      <div class="col-sm-6 col-md-3 produtoItem">
+        <a href="#">
+          <img src="./img projeto/produtos/caixa1 produto.png" class="produtoImg" alt="">
+          <p class="pNomeProduto">Trophic 1.5 - Hipercalórica</p>
+          <p class="pNomeProduto2">1.5 kcal por ml</p>
+
+          <div class="estrelinhas">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela vazia.png" alt="">
+          </div>
+
+          <s class="pProdutos1">de R$24,00</s>
+          <p class="pProdutos">
+            por <br>
+            R$<b class="bProdutos">21,23</b>
+          </p>
+        </a>
       </div>
 
-      <div class="col-lg-4 formVisita">
+      <div class="col-sm-6 col-md-3 produtoItem">
+        <a href="#">
+          <img src="./img projeto/produtos/lata produto.png" class="produtoImg" alt="">
+          <p class="pNomeProdutoThicken">Thicken UP Clear - 125 g -</p>
+          <p class="pNomeProdutoThicken1">Espessante, Gelificante</p>
+
+          <div class="estrelinhas">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+          </div>
+
+          <s class="pProdutos11">de R$67,40</s>
+          <p class="pProdutos">
+            por <br>
+            R$<b class="bProdutos">59,00</b>
+          </p>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-3 produtoItem">
+        <a href="#">
+          <img src="./img projeto/produtos/lata jr produto.png" class="produtoImg" alt="">
+          <p class="pNomeProduto">Botina de Segurança</p>
+          <p class="pNomeProduto2">Confeccionada em</p>
+
+          <div class="estrelinhas">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela vazia.png" alt="">
+          </div>
+
+          <s class="pProdutos1">de R$24,00</s>
+          <p class="pProdutos">
+            por <br>
+            R$<b class="bProdutos">21,23</b>
+          </p>
+        </a>
+      </div>
+
+      <div class="col-sm-6 col-md-3 produtoItem">
+        <a href="#">
+          <img src="./img projeto/produtos/caixa produto.png" class="produtoImg" alt="">
+          <p class="pNomeProduto">Trophic Soya 1000 ml</p>
+          <p class="pNomeProduto2">1.2 kcal por ml</p>
+
+          <div class="estrelinhas">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela cheia.png" alt="">
+            <img src="./img projeto/estrela vazia.png" alt="">
+          </div>
+
+          <s class="pProdutos1">de R$17,00</s>
+          <p class="pProdutos">
+            por <br>
+            R$<b class="bProdutos">14,82</b>
+          </p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SOLICITE VISITA -->
+  <section class="visita">
+    <div class="row no-gutters visitaRow">
+
+      <div class="col-lg-6 visitaImgCol">
+        <img class="visitaImg" src="./img projeto/café SOLICITE UMA VISITA.png"
+             alt="imagem de um café(solicite uma visita)">
+      </div>
+
+      <div class="col-lg-6 formVisita">
         <h2 class="h2Visita">Solicite uma visita</h2>
         <p class="pVisita">
           Estamos sempre prontos para atender com <br>
           maior agilidade e qualidade possível.
         </p>
+
         <img class="imgriscoo" src="./img projeto/risco laranja haverim.png" alt="">
 
         <div class="formularioVisita">
@@ -379,11 +362,12 @@
       </div>
 
     </div>
-  </div>
+  </section>
 
-  <!-- Dicas de saude -->
-  <div class="DicasSaude">
-    <div>
+
+  <!-- DICAS DE SAÚDE -->
+  <section class="DicasSaude">
+    <div class="container">
 
       <div class="row">
         <div class="col-12 textSaude">
@@ -393,134 +377,130 @@
         </div>
       </div>
 
-      <div class="row centralizaaaa">
-        <ul class="col-sm-12 imgSaude">
+      <div class="row">
+        <div class="col-12">
+          <ul class="imgSaude">
 
-          <li class="backgorundSaude1">
-            <img src="./img projeto/BACKFROUND CINZA ESCURO.png" alt="">
-          </li>
+            <li class="backgorundSaude1 decorBox">
+              <img src="./img projeto/BACKFROUND CINZA ESCURO.png" alt="">
+            </li>
 
-          <li>
-            <img src="./img projeto/BACKFROUND CINZA CLARO.png" alt="">
-          </li>
+            <li class="decorBox">
+              <img src="./img projeto/BACKFROUND CINZA CLARO.png" alt="">
+            </li>
 
-          <li class="cardSaude">
-            <img src="/img projeto/familia SAUDE COGNITIVA.png" alt="">
-            <h2>Saúde cognitiva</h2>
-            <p>
-              Declínios na saúde cognitiva associados à idade podem ser normais, mas eles não precisam ser um problema
-              grave. Tomar as medidas necessárias para manter e até melhorar a saúde cognitiva durante o processo de
-              envelhecimento é importante. Saber mais sobre o que influencia o cérebro e cognição são aspectos que podem
-              ajudar.
-            </p>
-          </li>
+            <li class="cardSaude">
+              <img src="./img projeto/familia SAUDE COGNITIVA.png" alt="">
+              <h2>Saúde cognitiva</h2>
+              <p>
+                Declínios na saúde cognitiva associados à idade podem ser normais, mas eles não precisam ser um problema
+                grave. Tomar as medidas necessárias para manter e até melhorar a saúde cognitiva durante o processo de
+                envelhecimento é importante.
+              </p>
+            </li>
 
-          <li class="cardSaude">
-            <img src="/img projeto/familia SAUDE COGNITIVA.png" alt="">
-            <h2>Saúde cognitiva</h2>
-            <p>
-              Declínios na saúde cognitiva associados à idade podem ser normais, mas eles não precisam ser um problema
-              grave. Tomar as medidas necessárias para manter e até melhorar a saúde cognitiva durante o processo de
-              envelhecimento é importante. Saber mais sobre o que influencia o cérebro e cognição são aspectos que podem
-              ajudar.
-            </p>
-          </li>
+            <li class="cardSaude">
+              <img src="./img projeto/familia SAUDE COGNITIVA.png" alt="">
+              <h2>Saúde cognitiva</h2>
+              <p>
+                Declínios na saúde cognitiva associados à idade podem ser normais, mas eles não precisam ser um problema
+                grave. Tomar as medidas necessárias para manter e até melhorar a saúde cognitiva durante o processo de
+                envelhecimento é importante.
+              </p>
+            </li>
 
-          <li class="decor">
-            <img src="./img projeto/BACKFROUND CINZA CLARO.png" alt="">
-          </li>
+            <li class="decor decorBox">
+              <img src="./img projeto/BACKFROUND CINZA CLARO.png" alt="">
+            </li>
 
-          <li class="decor">
-            <img src="./img projeto/BACKFROUND CINZA ESCURO.png" alt="">
-          </li>
+            <li class="decor decorBox">
+              <img src="./img projeto/BACKFROUND CINZA ESCURO.png" alt="">
+            </li>
 
-        </ul>
+          </ul>
+        </div>
       </div>
 
     </div>
-  </div>
+  </section>
 
-  <!-- mapa baixada -->
+
+  <!-- MAPA -->
   <section class="sectionMAP">
-    <div>
+    <div class="container">
       <h2>
         Nossa atuação abrange <br>
         um raio de aproximadamente
       </h2>
       <p>200 km dentro do Estado de São Paulo</p>
-    </div>
 
-    <div class="btnMapa">
-      <a href="" class="saibaMaps">
-        SAIBA MAIS
-        <img src="./img projeto/seta ENVIAR (solicite uma visita).png" />
-      </a>
+      <div class="btnMapa">
+        <a href="#" class="saibaMaps">
+          SAIBA MAIS
+          <img src="./img projeto/seta ENVIAR (solicite uma visita).png" alt="">
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- footer -->
-  <footer>
-    <nav>
 
-      <div class="container">
+  <!-- FOOTER -->
+  <footer class="footerSite">
+    <nav>
+      <div class="container text-center">
         <img src="./img projeto/risco laranja haverim.png" alt="">
         <br><br>
         <img src="./img projeto/logo.png" alt="">
       </div>
 
-      <!-- endereço e contatos -->
       <div class="container contatosHTM">
         <div class="row">
 
-          <div>
-            <div class="col-sm-12">
-              <img src="./img projeto/point local (endereço inferior pag).png" alt="">
-              <p class="distanceEND">Rua Antônio Bento, 79 – loja 2</p>
-              <p>Vila Mathias I Santos – SP I CEP: 11075-260</p>
-              <a href="" class="colorTXT">endereço para correspondência</a>
-            </div>
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <img src="./img projeto/point local (endereço inferior pag).png" alt="">
+            <p class="distanceEND">Rua Antônio Bento, 79 – loja 2</p>
+            <p>Vila Mathias | Santos – SP | CEP: 11075-260</p>
+            <a href="#" class="colorTXT">endereço para correspondência</a>
           </div>
 
-          <div class="col-sm-4 emailTest">
+          <div class="col-lg-4 mb-4 mb-lg-0">
             <img src="./img projeto/email @(fale conosco inferior pag).png" alt="">
             <p class="distanceEND">vendas@haverim.com.br</p>
-            <a href="" class="colorTXT">fale conosco</a>
+            <a href="#" class="colorTXT">fale conosco</a>
           </div>
 
-          <div class="col-sm-3">
+          <div class="col-lg-3">
             <img src="./img projeto/telefone (tel p contato inferior pag).png" alt="">
             <p class="distanceEND">
               13 3321.7933 <br>
               13 97421.3810
             </p>
-            <a href="" class="colorTXT">tel para contato</a>
+            <a href="#" class="colorTXT">tel para contato</a>
           </div>
 
         </div>
       </div>
 
-      <!-- footer inferior -->
       <div class="backgorundFOOTER">
-        <div class="w-100 p-2 container">
-          <div class="row">
+        <div class="container">
+          <div class="row align-items-center">
 
-            <div>
-              <p class="col-sm-12 HaverimColorCSS">
-                <br>
+            <div class="col-lg-6">
+              <p class="HaverimColorCSS mb-0 py-3">
                 2018 - Haverim - Todos os direitos reservados.
               </p>
             </div>
 
-            <div class="col-lg-4 logoImg">
-              <img src="./img projeto/LOGO MARCASITE.png" alt="Logo empresa contratante">
+            <div class="col-lg-4 logoImg py-3">
+              <img src="./img projeto/LOGO MARCASITE.png" alt="Logo empresa contratante" class="img-fluid">
             </div>
 
-            <div class="col-2 d-flex justify-content-center align-items-center">
-              <ul>
-                <li><a href="" class="corsim">Home</a></li>
-                <li><a href="" class="corsim">Atuação</a></li>
-                <li><a href="" class="corsim">Produtos</a></li>
-                <li><a href="" class="corsim">Contatos</a></li>
+            <div class="col-lg-2 py-3">
+              <ul class="footerMenu">
+                <li><a href="#" class="corsim">Home</a></li>
+                <li><a href="#" class="corsim">Atuação</a></li>
+                <li><a href="#" class="corsim">Produtos</a></li>
+                <li><a href="#" class="corsim">Contatos</a></li>
               </ul>
             </div>
 
@@ -530,6 +510,20 @@
 
     </nav>
   </footer>
+
+
+  <!-- Bootstrap 4 e JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
 
   <script src="./script/main.js"></script>
 </body>

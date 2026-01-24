@@ -1,90 +1,95 @@
-* {
-font-family: 'Montserrat', sans-serif;
+*{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
-h2{
-    color: #82817f;
+
+html, body{
+  width: 100%;
+  overflow-x: hidden;
 }
-.col-5{
-    color: #b5b5b5;
+
+h2{ color: #82817f; }
+
+a{ text-decoration: none; }
+a:hover{ text-decoration: none; }
+
+
+/* =========================
+   HEADER Navbar
+   ========================= */
+header{
+  background-color: #ededed;
 }
-ul{
-    display: flex;
-    list-style-type: none;
-    color: #838383;
+
+/* links do menu */
+.corsim{
+  color: #838383;
+  font-size: 15px;
 }
-header {
-    height: 90px;
-    background-color: #ededed;
+.corsim:hover{
+  color: #ff7329;
 }
-ul li {
-    margin: 15px;
-}
-.wppButton {
-    background-color: #80d0cd;
-    color: white;
-    padding-top: 3px;
-    height: 40px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 50px;
-}
-.dentroDiv{
-    position: relative;
-    margin-top: -150px;
-    
-}
-.telCor{
-    color: inherit;
-}
-.telCor:hover{
-     color: inherit;         
-  text-decoration: none;  
-  outline: none;          
-  box-shadow: none;
- 
-}
-.telCora{
-    color: inherit;   
-}
-.telCora:hover{
-    color: rgb(0, 0, 0);   
-    background-color: white;
-    text-decoration: none;  
-    outline: none;          
-    box-shadow: none
-     
-}
-/* Banner (div pai do texto + imagem) */
-.txtBannerf1{
-  position: absolute;
-  inset: 0;               
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  z-index: 2;
+
+/* Botão telefone */
+.headerNav .wppButton{
+  height: auto !important;
+  min-height: 40px;
+  padding: 10px 16px !important;
+  border-radius: 999px;
+  background-color: #80d0cd;
   color: #fff;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px;
+
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.headerNav .wppButton svg{
+  flex: 0 0 auto;
+  display: block;
+}
+
+.headerNav .wppButton .telCor{
+  color: #fff !important;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.headerNav .wppButton .telCor:hover{
+  color: #fff !important;
+}
+
+/* mobile centraliza e limita largura */
+@media (max-width: 991.98px){
+  .headerNav .wppButton{
+    width: 100%;
+    max-width: 260px;
+    margin: 12px auto 0;
+  }
 }
 
 
+/* =========================
+   BANNER HERO
+   ========================= */
 .bannerHero{
   position: relative;
   z-index: 0;
 }
 
-/* imagem do banner  */
 .bannerHero > img{
   width: 100%;
   height: 100%;
-  object-fit: cover;      
+  object-fit: cover;
   display: block;
 }
 
-
 .bannerHero::after{
-   content: "";
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.25);
@@ -92,189 +97,312 @@ ul li {
 }
 
 .txtBannerf1{
- position: absolute;
-  z-index: 2; 
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  padding: 0 16px;
 }
+
 .h1Bannerf1{
-    font-size: 47px;
-    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+  font-size: 47px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.7);
 }
 
 .pBannerf1{
-    font-size: 22px;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  font-size: 22px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
+
 .btnSaibaMais{
-      margin-top: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px 30px;
-    border-radius: 35px;
-    border: 1px solid white;
-
-    color: white;              
-    text-decoration: none;
-    transition: all 0.3s ease; 
+  margin-top: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 26px;
+  border-radius: 35px;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 .btnSaibaMais:hover{
-    background-color: white;
-    color: black; 
+  background-color: #fff;
+  color: #000;
 }
-.qualificacao{
-    font-weight: 400;
-    color: white;
-}
-.txtProd{
-    padding-left: 25px;
-}
-.agulhaProd{
-    background-color: #ff881c; 
-    padding-top: 50px;
-}
-.capaceteProd{
-    background-color: #ffac60;
-    padding-top: 50px;
-}
-.maoProd{
-    background-color: #ff9f48;
-    padding-top: 50px;
-}
-.peProd{
-    background-color: #ff912e;
-    padding-top: 50px;
-}
-.harimMoment{
-padding-top: 235px;
-color: #82817f;
-}
-.imgrisco{
-  padding-left: 520px;
-}
-.imgriscoo{
-    padding-left: 220px;
-  }
-.txtHarimH2{
-    text-align: center;
-    color: #82817f;
-}
-.imgTextdistance{
-    padding-top: 70px;
-}
-.HaverimColorCSS{
-    color: #82817f;
-}
-.distanceHaverim{
-    padding-top: 230px;
-    padding-bottom: 280px;
-    padding-left: 500px;
-    margin-left: -300px;
-    margin-top: -100px;
-}
-.pNomeProdutoThicken{
-    color:  #82817f;
-    padding-left: 0px;
-}
-.pNomeProdutoThicken1{
-    color:  #82817f;
-    padding-left: 5px;
-}
-.imgLatatck1{
-    padding-left: 20px;
-}
-.imgLatatck{
-    padding-left: 40px;
-}
-.imgLatatck2{
-    padding-left: 20px;
-}
-.estrelinhasPapum{
-    padding-left: 70px;
-}
-.estrelinhasPapum2{
-    padding-left: 50px;
-}
-.estrelinhasPapum3{
-    padding-left: 60px;
-}
-.pProdutos11{
-    font-size: 12px;
-    color: #c7c7c7;
-    padding-left: 65px;
-}
-.pProdutos1{
-    font-size: 12px;
-    color: #c7c7c7;
-    padding-left: 70px;
-}
-.pProdutos{
-    font-size: 12px;
-    color: #c7c7c7;
-    padding-left: 35px;
-}
-.pNomeProduto{
-   color:  #82817f;
-   padding-left: 25px;
-}
-.distance{
-    margin-top: -40px;
 
+.telCora{ color: inherit; }
+.telCora:hover{ color: inherit; }
+
+@media (max-width: 767.98px){
+  .bannerHero{ min-height: 420px; }
+  .bannerHero > img{ height: 420px; }
+
+  .h1Bannerf1{ font-size: 32px; line-height: 1.1; }
+  .pBannerf1{ font-size: 16px; }
+  .btnSaibaMais{ margin-top: 18px; padding: 12px 18px; }
 }
-.distance2{
-    margin-top: -10px;
+
+
+/* =========================
+   SKILLS
+   ========================= */
+.dentroDiv{
+  position: relative;
+  margin-top: -150px;
 }
-.distance1{
-    margin-top: -20px;
+
+.qualificacao{
+  font-weight: 400;
+  color: #fff;
 }
-.pNomeProduto2{
-    color:  #82817f;
-    padding-left: 45px;
- }
+
+.txtProd{
+  padding: 50px 25px 40px;
+}
+
+.agulhaProd{ background-color: #ff881c; }
+.peProd{ background-color: #ff912e; }
+.maoProd{ background-color: #ff9f48; }
+.capaceteProd{ background-color: #ffac60; }
+
+@media (max-width: 767.98px){
+  .dentroDiv{
+    margin-top: 0 !important;
+    position: static;
+  }
+
+  .txtProd{
+    padding: 22px 18px !important;
+    text-align: left;
+  }
+
+  .qualificacao h3{ font-size: 22px; margin-top: 10px; }
+  .qualificacao p{ font-size: 14px; margin-bottom: 0; }
+}
+
+
+/* =========================
+   HAVERIM (TEXTO + IMAGEM)
+   ========================= */
+.harimMoment{
+  padding-top: 235px;
+  color: #82817f;
+}
+
+.txtHarimH2{
+  text-align: center;
+  color: #82817f;
+}
+
+.imgTextdistance{
+  padding-top: 70px;
+}
+
+.HaverimColorCSS{
+  color: #82817f;
+}
+
+/* centraliza os “riscos” sem padding fixo */
+.imgrisco,
+.imgriscoo{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   CAROUSEL
+   ========================= */
+.slider{
+  position: relative;
+  margin: 0 auto 44px;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+
+.slider input{ display: none; }
+
+.slide{
+  width: 25%;
+  transition: 0.8s;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* movimento */
+#radio1:checked ~ .first{ margin-left: 0; }
+#radio2:checked ~ .first{ margin-left: -25%; }
+#radio3:checked ~ .first{ margin-left: -50%; }
+#radio4:checked ~ .first{ margin-left: -75%; }
+
+/* bolinhas */
+.manual-navigation{
+  position: absolute;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  z-index: 10;
+}
+
+.manual-btn{
+  border: 2px solid #5e5e5e;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.manual-btn:hover{ background-color: #111; }
+
+.navigation-auto{
+  display: none;
+}
+
+@media (max-width: 575.98px){
+  .slider{
+    max-width: 92%;
+    aspect-ratio: 16 / 9;
+  }
+  .manual-navigation{ bottom: 10px; }
+}
+
+
+/* =========================
+   PRODUTOS
+   ========================= */
+.produtosSection{
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+/* cada item */
+.produtoItem{
+  margin-top: 26px;
+}
+
+.produtoItem > a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: inherit;
+}
+
+/* imagem do produto */
+.produtoImg{
+  display: block;
+  margin: 0 auto 14px;
+  max-width: 190px;
+  width: 100%;
+  height: auto;
+}
+
+/* estrelas */
+.estrelinhas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin: 10px auto 8px;
+}
+
+.pNomeProduto,
+.pNomeProduto2,
+.pNomeProdutoThicken,
+.pNomeProdutoThicken1{
+  color: #82817f;
+  padding-left: 0 !important;
+}
+
+.pProdutos,
+.pProdutos1,
+.pProdutos11{
+  font-size: 12px;
+  color: #c7c7c7;
+  padding-left: 0 !important;
+  text-align: center;
+}
+
 .bProdutos{
-    font-size: 25px;
-    color: #f58f36;
-    padding-left: 10px;
+  font-size: 25px;
+  color: #f58f36;
+  padding-left: 0;
 }
-.backgorundDistanceLatas{
-    padding-top: 90px;
-}
-.imgProduto{
-    text-align: center;
-    color: #82817f;
-    padding-top: 75px;
-}
-.confiraEdit{
-    text-align: center;
-    color: #82817f;
-    
-}
+
+
+/* =========================
+   VISITA (FORM)
+   ========================= */
 .visita{
-    background-color: #fff7eb;
+  background-color: #fff7eb;
 }
+
+.visitaRow{
+  align-items: stretch;
+  margin-top: 24px;
+}
+
+.visitaImgCol{
+  padding: 0;
+  display: flex;
+  min-height: 560px;
+}
+
+.visitaImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .formVisita{
-    color: #82817f 
+  color: #82817f;
+  padding: 40px 24px;
+  margin: 0;
 }
+
 .h2Visita{
-    padding: 50px;
-    padding-left: 130px; 
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  padding: 0;
 }
+
 .pVisita{
-margin-left: -90px;
-margin-top: -50px;
-    text-align: center;
-    color: #b5b5b5;
+  margin: 0 0 16px 0;
+  text-align: center;
+  color: #b5b5b5;
 }
-/* Container do formulário */
+
 .formularioVisita{
   width: 100%;
-  max-width: 650px;       
-  margin: 0 auto;         
-  padding: 65px 55px;     
-  box-sizing: border-box;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 28px;
 }
 
-/* Inputs e textarea: padrão */
 .inpName,
 .inpAssunto,
 .inpEmail,
@@ -283,28 +411,24 @@ margin-top: -50px;
   width: 100%;
   border: 1px solid #ebebeb;
   background-color: #ffffff;
-  padding: 10px 14px;
-  border-radius: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
   margin-bottom: 13px;
-  box-sizing: border-box;
   outline: none;
   color: #b5b5b5;
 }
 
-/* Linha Email + Telefone */
 .linhaInputs{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
-/* textarea */
 .formControl{
   resize: vertical;
   min-height: 140px;
 }
 
-/* Botões */
 .btnsVisita{
   display: flex;
   justify-content: center;
@@ -318,7 +442,6 @@ margin-top: -50px;
   background-color: #fff7eb;
   color: #dac29f;
   padding: 10px 40px;
-  border-radius: 10px;
   cursor: pointer;
   border-radius: 30px;
 
@@ -329,28 +452,38 @@ margin-top: -50px;
 
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .btnResetVisita:hover,
 .btnSubmitVisita:hover{
   background-color: #dac29f;
   color: #ffffff;
 }
 
-
-/* Imagens dos botões */
 .btnResetVisita img,
 .btnSubmitVisita img{
   width: 16px;
   height: 16px;
 }
 
-/* Responsivo: no celular vira uma coluna */
-@media (max-width: 600px){
-  .formularioVisita{
-    padding: 40px 20px;
+/* responsivo visita */
+@media (max-width: 991.98px){
+  .visitaImgCol{ min-height: 320px; }
+}
+
+@media (max-width: 767.98px){
+  .formVisita{
+    text-align: center;
+    padding: 32px 20px !important;
+  }
+
+  .h2Visita{
+    font-size: 32px;
+    line-height: 1.15;
   }
 
   .linhaInputs{
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .btnsVisita{
@@ -363,154 +496,225 @@ margin-top: -50px;
   }
 }
 
+
+/* =========================
+   DICAS DE SAÚDE
+   ========================= */
 .DicasSaude{
-    padding: 130px;
-    margin-left: -145px;
+  padding: 90px 0 !important;
+  margin: 0 !important;
 }
-.imgSaude{
-    padding: 70px;
-}
+
 .textSaude{
-    text-align: center;
-    color: #b5b5b5;
+  text-align: center;
+  color: #b5b5b5;
+  margin-bottom: 40px;
 }
-.centralizaaaa{
-    display: flex;
+
+.DicasSaude .imgSaude{
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  max-width: 1200px;
+  width: 100%;
+
+  display: grid !important;
+  grid-template-columns: 90px 160px 1fr 1fr 160px 90px;
+  gap: 28px;
+  align-items: start;
 }
+
+.DicasSaude .imgSaude > li{ width: 100%; }
+
+.DicasSaude .decorBox{
+  height: 260px;
+}
+
+.DicasSaude .decorBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.DicasSaude .cardSaude{
+  text-align: left;
+}
+
+.DicasSaude .cardSaude img{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: 0% 5%;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.DicasSaude .cardSaude h2{
+  margin: 0 0 10px 0;
+  color: #82817f;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.DicasSaude .cardSaude p{
+  margin: 0;
+  color: #b5b5b5;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+@media (max-width: 991.98px){
+  .DicasSaude .imgSaude{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .DicasSaude .decorBox{
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px){
+  .DicasSaude .imgSaude{
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 0 16px !important;
+  }
+
+  .DicasSaude .cardSaude img{ height: 220px; }
+  .DicasSaude .cardSaude h2{ font-size: 32px; }
+}
+
+
+/* =========================
+   MAPA
+   ========================= */
 .sectionMAP{
-    background-image: url(../BACKGROUNDmap.png);
-    padding: 120px 0 70px;
-    text-align: center;
-    color: white;
-    margin-bottom: 70px;
+  background-image: url(../BACKGROUNDmap.png);
+  padding: 120px 0 70px;
+  text-align: center;
+  color: white;
+  margin-bottom: 70px;
 }
+
 .btnMapa{
-    display:inline-block;
-    padding: 15px 30px;
-    border-radius: 30px;
-    background-color: white;
-    align-items: center;    
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 30px;
+  background-color: white;
 }
+
 .saibaMaps{
-    color: #838383;
-    font-size: 15px;
-    text-decoration: none;
-    outline: none;
-    box-shadow: none;
+  color: #838383;
+  font-size: 15px;
+  outline: none;
 }
-.colorTXT{
-    color: #ff7329;
-}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+.colorTXT{ color: #ff7329; }
+
 .contatosHTM{
-    padding-top:80px;
-    padding-bottom: 50px;
-    color: #82817f;
-}
-.emailTest{
-    text-align: left;
-    margin-left: 45px;
-}
-.corsim{
-    color: #838383;
-    font-size: 15px;
-    
-}
-.corsim:hover{
-    color: #ff7329;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #82817f;
 }
 
-.logoImg{
-    padding-top: 20px;
-
-}
 .backgorundFOOTER{
-    background-color: #ededed;
-}
-.distanceEND{
-    padding-top: 20px;
+  background-color: #ededed;
 }
 
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-  }
-  .slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
-  }
-  .slider input{
-    display:  none;
-  }
-  .slide{
-    width: 25%;
-    position: relative;
-    transition: 2s;
-  }
-  .slide img{
-    width: 800px;
-  }
-  .manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-  }
-  .manual-btn{
-    border: 2px solid #5e5e5e;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  .manual-btn:not(:last-child){
-    margin-right: 20px;
-  }
-  .manual-btn:hover{
-    background-color: rgb(4, 4, 4);
-  }
-  #radio1:checked ~ .first{
-    margin-left: 0;
-  }
-  #radio2:checked ~ .first{
-    margin-left: -25%;
-  }
-  #radio3:checked ~ .first{
-    margin-left: -50%;
-  }
-  #radio4:checked ~ .first{
-    margin-left: -75%;
-  }
-  .navigation-auto div{
-    border:  2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  .navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-  }
-  .navigation-auto div:not(:last-child){
-    margin-right: 20px;
-  }
-  #radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff;
-  }
-  #radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
-  }
-  #radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
-  }
-  #radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff;
-  }
-  
+.distanceEND{
+  padding-top: 20px;
+}
+
+/* menu do footer */
+.footerMenu{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footerMenu li{
+  margin: 6px 0;
+}
+.footerMenu a{
+  color: #838383;
+  font-size: 15px;
+}
+.footerMenu a:hover{
+  color: #ff7329;
+}
+/* =========================
+   NOSSOS DESTAQUES - CENTRALIZAR TÍTULO
+   ========================= */
+.imgProduto{
+  text-align: center;
+  padding-top: 75px;
+  color: #82817f;
+}
+
+.imgProduto .confiraEdit{
+  margin: 0 0 6px 0;
+  text-align: center;
+}
+
+.imgProduto h2{
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+/* risco/linha abaixo do título */
+.imgProduto > img{
+  display: block;
+  margin: 0 auto 18px auto;
+}
+/* =========================
+   PRODUTOS – padronizar cards
+   ========================= */
+
+/* deixa todos os cards com comportamento consistente */
+.produtosSection .produtoItem > a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* área padrão */
+.produtosSection .produtoImg{
+  width: 100%;
+  max-width: 160px;     
+  height: 160px;        
+  object-fit: contain;  
+  display: block;
+  margin: 0 auto 14px auto;
+}
+
+.produtosSection .pNomeProduto,
+.produtosSection .pNomeProduto2,
+.produtosSection .pNomeProdutoThicken,
+.produtosSection .pNomeProdutoThicken1,
+.produtosSection .pProdutos,
+.produtosSection .pProdutos1,
+.produtosSection .pProdutos11{
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  text-align: center !important;
+}
+
+/* estrelas */
+.produtosSection .estrelinhas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin: 10px auto 8px auto;
+  padding: 0;
+}
+
+.produtosSection .produtoItem{
+  margin-bottom: 28px;
+}
